@@ -1,5 +1,5 @@
 // main.sass
-$grey: #666
+$grey: #676767
 $darkest-grey: #111
 $white: #FFF
 $nav-padding: 14px 16px
@@ -29,22 +29,20 @@ html
 			padding: $nav-padding
 			padding-left: 0
 			display: flex
-			#sun-container
-				color: #ffbe26
+			img
+				max-width:2em
 			#logo-text
 				margin: 0
 				padding-left: 10px
 
 		nav
-			float: right
 			ul
 				list-style-type: none
 				margin: 0
-				padding: 0
-				overflow: hidden
+				padding: 7px 0
 				li
 					float: left
-					min-width: 130px
+					min-width: 80px
 					a
 						display: block
 						color: $white
@@ -54,12 +52,8 @@ html
 						background-color: $darkest-grey
 					&:hover .dropdown
 						display: inline-block
-				.dropdown
-					display: none
-					position: absolute
-					min-width: 134px
-					z-index: 1
-					background-color: $grey
-					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
-					li
-						float: unset
+
+		#searchBox
+			float: right
+			input, button
+				padding: 5px

@@ -17,14 +17,110 @@
 	<header id="header"></header>
 	<main>
 		<div id="hero">
-			<i class="fas fa-umbrella-beach"></i>
+			<div class="content">
+				<div class="text">
+					<h1>About Paradigm Pet Professionals</h1>
+					<p>
+						Pets are nature's gift to humanity. It has been scientifically
+						proven that opening our homes and hearts to a pet increases our
+						longevity and improves our overall quality of life as well as the
+						lives of our pets. At Pet Paradigm Professionals, our mission is
+						to offer resources to help you care for your furry, scaly, feathery,
+						and slimy loved ones. Our pet experts-or "Pexperts"-have been
+						working with pet owners and professionals alike for the past twelve
+						years. They offer one-on-one consultations with current and
+						prospective pet owners as well as group presentations designed for
+						veterinary, pet shelter, and pet breeding professionals.
+					</p>
+					<p>
+						Looking for basic pet care advice for the most common type of pets?
+						Need additional help determining which type of pet is right for you
+						and your family? We will work with you and provide tailored
+						evidence-based pet care to ensure lifelong health and wellness of
+						your new companion. 
+					</p>
+					<ul>
+						<li>
+							General Adoption Resources: 
+							<a href="https://theshelterpetproject.org/" target="_blank">
+								https://theshelterpetproject.org/
+							</a>
+						</li>
+						<li>
+							ASPCA:
+							<a href="https://www.aspca.org/" target="_blank">
+								https://www.aspca.org/
+							</a>
+						</li>
+						<li>
+							Fish Rescue:
+							<a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"
+								target="_blank">
+								https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
+							</a>
+						</li>
+						<li>
+							Snake Rescue:
+							<a href="https://savethesnakes.org/snakerescuecall/" target="_blank">
+								https://savethesnakes.org/snakerescuecall/
+							</a>
+						</li>
+						<li>
+							Bird Rescue:
+							<a href="https://ftlob.rescuegroups.org/" target="_blank">
+								https://ftlob.rescuegroups.org/
+							</a>
+						</li>
+					</ul>
+					<p>
+						We are also happy to help you navigate the adoption process! We will
+						guide you through each step in the process from determining which
+						type of pet is best suited for your family and home environment, to
+						completing the necessary paperwork, to bringing your new loved one
+						home. Please fill out our contact form to request a consultation. We
+						will contact you within 48 hours to schedule a consultation. All
+						fields are required.
+					</p>
+				</div>
+			</div>
 		</div>
 		<section id="contact" class="content">
-			<h1>Contact Us</h1>
+			<h2>Contact Us</h2>
 			<form action="#">
 				<span class="field">
+					<label for="name">Name</label>
+					<input id="name" type="text" required><br>
+				</span>
+				<span class="field">
 					<label for="email">Email</label>
-					<input id="email" type="text"><br>
+					<input id="email" type="text" required><br>
+				</span>
+				<span class="field">
+					<label for="phone">Phone</label>
+					<input id="phone" type="tel" required><br>
+				</span>
+				<span class="field">
+					<label for="pet_name">Pet Name</label>
+					<input id="pet_name" type="text" required><br>
+				</span>
+				<span class="field">
+					<label for="pet_type">Pet Type</label>
+					<select id="pet_type" name="pet_type">
+						<option value="select_below" selected disabled>
+							-- Please select option below --
+						</option>
+						<option value="dog">Dog</option>
+						<option value="cat">Cat</option>
+						<option value="fish">Fish</option>
+					</select>
+				</span>
+				<span class="field">
+					<label for="pet_age">Pet Age</label>
+					<input id="pet_age" type="number" required><br>
+				</span>
+				<span class="field">
+					<label for="zip">Zip Code</label>
+					<input id="zip" type="text" pattern="[0-9]{5}" required><br>
 				</span>
 				<span class="field">
 					<label for="message">Message</label>
@@ -32,9 +128,7 @@
 				</span>
 				<input id="msg-btn" type="submit" value="Send Message">
 			</form>
-			<aside id="happy_image">
-				<i class="fas fa-users"></i>
-			</aside>
+			<img id="team-img" src="img/ppp-team.jpg" alt="team-img">
 		</section>
 	</main>
 </body>
