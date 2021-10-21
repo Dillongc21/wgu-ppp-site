@@ -2,23 +2,25 @@ body
 	background-position: center
 	background-size: cover
 	background-repeat: no-repeat
-	section.content
-		background-color: rgba(102, 153, 204, 0.9)
-		padding: 40px 50px
-		margin: 50px auto
-		color: #FFF
-		h1
-			margin-top: 0
-			font-size: 2rem
-		p, li
-			font-size: 1.25rem
-			a
-				color: #FFF
-				font-weight: normal
-				text-decoration: underline
-				&:hover
+	main
+		display: grid
+		.content
+			background-color: rgba(102, 153, 204, 0.9)
+			padding: 40px 50px
+			margin: 50px auto
+			color: #FFF
+			h1
+				margin-top: 0
+				font-size: 2rem
+			p, li
+				font-size: 1.25rem
+				a
+					color: #FFF
+					font-weight: normal
+					text-decoration: underline
+					&:hover
+						font-weight: bold
+				em
 					font-weight: bold
-			em
-				font-weight: bold
-			.tabbed
-				margin-left: 1em
+				.tabbed
+					margin-left: 1em

@@ -16,8 +16,26 @@
 </head>
 <body style="background-image:url(img/fishy.jpg)">
 	<header id="header"></header>
-	<section class="content">
-		<h1>Fish Care Information</h1>
+	<aside id="sidenav">
+		<div id="sn-content">
+			<span id="breadcrumbs"><a href="index.html">Home</a> > Fish</span>
+			<h3>Page Sections</h3>
+			<ul id="section-links">
+				<li class="section-link">
+					<a href="#fish-care">Fish Care Information</a>
+				</li>
+				<li class="section-link">
+					<a href="#fresh-fish">Freshwater Fish</a>
+				</li>
+				<li class="section-link">
+					<a href="#salty-fish">Saltwater Fish</a>
+				</li>
+			</ul>
+		</div>
+	</aside>
+	<main>
+		<div class="content">
+		<h1 id="fish-care">Fish Care Information</h1>
 		<p>
 			Fish represent a broad class of aquatic animals that can live in fresh or
 			saltwater, depending on the species. Bringing fish into your home can be
@@ -30,7 +48,7 @@
 			your aquarium, it is important to test your water <em>once per week</em>
 			to ensure it is free from toxins that can harm your fish.
 		</p>
-		<h2>Freshwater Fish</h2>
+		<h2 id="fresh-fish">Freshwater Fish</h2>
 		<p>
 			There are several freshwater fish to choose from when setting up your
 			aquarium, but it is best to consult with a "Pexpert" to ensure your fish
@@ -45,7 +63,7 @@
 			<li>Nitrates: 5 to 10 ppm</li>
 			<li>Nitrites: less than 0.5 ppm</li>
 		</ul>
-		<h2>Saltwater Fish</h2>
+		<h2 id="salty-fish">Saltwater Fish</h2>
 		<p>
 			Saltwater fish also offer several options when it comes to choosing among
 			species for your aquarium. As with freshwater fish, consult with a
@@ -72,7 +90,8 @@
 				http://fishbase.org/home.htm
 			</a>
 		</p>
-	</section>
+		</div>
+	</main>
 	<div id="foot"></div>
 </body>
 </html>
