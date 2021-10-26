@@ -5,17 +5,27 @@
 	<title>Paradigm Pet Professionals</title>  
 	<link rel="stylesheet" href="css/build/main.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/build/index.css" type="text/css" media="all">
-	<script src="js/jquery-3.6.0.min.js"></script>
-	<script defer src="js/all.min.js"></script>
-	<script> 
-		$(function(){
-			$("#header").load("html-fragments/header.html"); 
-			$("#foot").load("html-fragments/footer.html");
-		});
-	</script>
 </head>
 <body>
-	<header id="header"></header>
+	<header id="header">
+		<div class="content">
+			<a id="logo" href="index.html">
+				<img src="img/ppp-logo.png" alt="logo"/>
+				<p id="logo-text">Paradigm Pet Professionals</p>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="cats.html">Cats</a></li>
+					<li><a href="dogs.html">Dogs</a></li>
+					<li><a href="fish.html">Fish</a></li>
+				</ul>
+			</nav>
+			<form id="searchBox" action="#">
+				<input type="text" placeholder="Search..." name="search">
+				<button type="submit">Go!</button>
+			</form>
+		</div>
+	</header>
 	<aside id="sidenav">
 		<div id="sn-content">
 			<span id="breadcrumbs">Home</span>
@@ -233,6 +243,19 @@
 			<img id="team-img" src="img/ppp-team.jpg" alt="team-img">
 		</section>
 	</main>
-	<div id="foot"></div>
+	<div id="foot">
+		<footer>
+			<div class="desc">
+				Paradigm Pet Professionals opened our doors 8 years ago and has provided
+				excellent service, since. We have been recognized and awarded for the last 3
+				years as the leader in pet consultation.
+				We are here for you!
+			</div>
+			<div class="copyright">
+				© Paradigm Pet Professionals
+				<a href="index.html#contact">Contact Us for a Consultation</a>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
